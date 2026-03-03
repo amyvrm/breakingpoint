@@ -1,0 +1,19 @@
+{
+    "tp": {
+        "CVE-2023-28771": [
+            {
+                "10.1.1.242_25186_10.2.0.1_500_3.pcap": [
+                    {
+                        "status": "unknown",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-28771/udp/10.1.1.242_25186_10.2.0.1_500_3.pcap",
+                        "filter_id": "42776",
+                        "filter_name": "ISAKMP: ZyXEL Multiple Products Command Injection Vulnerability",
+                        "first_run": "unknown",
+                        "last_run": "unknown"
+                    }
+                ]
+            }
+        ]
+    },
+    "ds": {}
+}

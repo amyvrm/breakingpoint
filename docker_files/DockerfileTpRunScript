@@ -1,0 +1,6 @@
+FROM ubuntu:latest
+
+RUN apt-get update && useradd -s /bin/bash -u 501 -U -d /build -m build && groupmod -g 501 build
+# Install SSH client and sshpass
+RUN apt-get install -y openssh-client sshpass
+CMD ["bash"]

@@ -1,0 +1,16 @@
+FROM python:3.12.0-bullseye
+# update and add user
+RUN apt-get update && useradd -s /bin/bash -u 501 -U -d /build -m build && groupmod -g 501 build
+# Install system dependencies required by lxml
+RUN apt-get install -y libxml2-dev libxslt1-dev
+RUN pip install --upgrade setuptools
+# Install the lxml Python package
+RUN pip install --upgrade pip
+RUN pip install --upgrade lxml
+# Install boto3 using pip
+RUN pip install boto3>=1.26.156
+# Install requests using pip
+RUN pip install requests>=2.31.0
+RUN pip install questionary>=1.10.0
+
+

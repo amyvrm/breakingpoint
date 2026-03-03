@@ -1,0 +1,569 @@
+#!/usr/bin/env python3
+
+# Actions:
+#   1. Login to BPS box
+#   2. Create a new smart strike list
+#   3. List the strikes from the smart strikelist
+#   4. Create a new strike list
+#   5. Add a few strikes
+#   6. Remove a strike
+#   7. Save As/ Save the strike list
+#   8. reserve ports and run
+#   9. Monitor security stats
+#   10. get results from report section
+#   11. Export capture
+#   12. Unreserve ports and logout
+
+import time, sys, os
+# Add bps_restpy libpath *required if the library is not installed
+libpath = os.path.abspath(__file__+"/../../..")
+sys.path.insert(0,libpath)
+
+from bps_restpy.bps import BPS, pp
+from config import Config
+import argparse
+import subprocess
+import boto3
+import shutil
+import json
+import tp_find_filter
+import track_filter_id_cve_pcap
+import teams_notification
+
+
+
+class BpsOperations(object):
+    def __init__(self, config, dv_metadata_path):
+        # Breaking point credential
+        self.bps_system = config.get_bps_ip()
+        self.bps_user = config.get_bps_user()
+        self.bps_pwd = config.get_bps_pwd()
+        # search string
+        self.search_strikes = config.get_search_strikes()
+        self.num_of_filter = config.get_number_of_filter()
+        # Breaking point variables
+        self.test = config.get_test_name()
+        self.import_test_file = config.get_import_test_file()
+        self.new_strike_list = config.get_new_strike_list_name()
+        self.dep_path = config.get_dep_path()
+        self.new_cve_list_file = config.get_new_cve_list_file()
+        self.new_cve_list = {"cve": []}
+        self.tracker_file = config.get_tacker_file()
+        self.no_filter_found_file = config.get_no_filter_found_file()
+        self.artefact_folder = config.get_artefact_folder()
+        # get the dep parameters
+        split_tool_name = config.get_tool()
+        self.pcaps_folder = config.get_pcaps_folder()
+        self.pcap_name = config.get_pcap_name()
+        self.local_path = os.getcwd()
+        self.split_tool = os.path.join(self.local_path, self.dep_path, split_tool_name)
+        self.create_folder(os.path.join(self.local_path, self.pcaps_folder))
+        self.wait_time = 40
+        # configuration
+        self.slot_number = 1
+        self.group_number = 1
+        self.port_list_of_list = [[0, 1], [2, 3], [4, 5], [6, 7]]
+        # get aws variables
+        access_key_id = config.get_access_key_id()
+        secret_key = config.get_secret_key()
+        self.bucket_name = config.get_bucket_name()
+        self.bucket_prefix = config.get_bucket_prefix()
+        # self.s3 = boto3.resource('s3', aws_access_key_id=access_key_id, aws_secret_access_key=secret_key)
+        self.s3 = boto3.client('s3', aws_access_key_id=access_key_id, aws_secret_access_key=secret_key)
+        self.dv_metadata_path = dv_metadata_path
+
+    def main(self):
+        un_reserve_port = True
+        pass_test_list = []
+        failed_test_list = []
+        try:
+            self.login()
+            self.create_strike_list()
+            # self.create_test_model()
+            self.import_load_test()
+            self.load_strike_list_in_test()
+            # get cve strikes
+            all_strike_list = self.search_strike_list()
+            if len(all_strike_list) == 0:
+                un_reserve_port = False
+                print("Failed to get strikes from search criteria {}".format(self.search_strikes))
+                return False
+            else:
+                self.reserve_port()
+                for strike in all_strike_list:
+                    print("testing strike: {}".format(strike["strike"]))
+                    # Continue testing even if some of the attempts fail during testing strikes.
+                    try:
+                        self.add_strike(strike["strike"])
+                        # self.load_strike_list_in_test()
+                        self.enable_user_setting()
+                        self.run_test()
+                        self.block_traffic_on_reserve_ports()
+                        self.get_report()
+                        cve_folder = self.get_pcaps(strike)
+                        if self.split_pcap(cve_folder) == "success":
+                            self.remove_fcs_pcap(cve_folder)
+                            self.uplodad_pcap_s3(cve_folder)
+                        pass_test_list.append(strike)
+                    except Exception as e:
+                        print("{0}\nError !! failed in testing {1}\nfor strike {2}\n{0}".format("-"*70, e, strike))
+                        failed_test_list.append(strike)
+                    finally:
+                        self.remove_strike()
+                return True
+        except Exception as e:
+            print("{0}\nError !! While running the automation. \n{1}\n{0}".format("-" * 70, e))
+        finally:
+            if un_reserve_port:
+                self.un_reserve_ports()
+                self.delete_test()
+                self.delete_strike_list()
+            self.logout()
+            print("{}\nTest Summary".format("="*100))
+            print("Pass Strike {}\nNumber of Pass Strike {}".format(pass_test_list, len(pass_test_list)))
+            print("Failed Strike {}\nNumber of Failed Strike {}".format(failed_test_list, len(failed_test_list)))
+            print("{}".format("="*100))
+
+    def login(self):
+        # Login to BPS box
+        self.bps = BPS(self.bps_system, self.bps_user, self.bps_pwd)
+        self.bps.login()
+
+    def create_strike_list(self):
+        print("Create a new strike list from scratch with no name.")
+        self.bps.strikeList.new()
+        print("Save the strike list under a new name.")
+        self.bps.strikeList.saveAs(self.new_strike_list, True)
+
+    def delete_strike_list(self):
+        print("Deleting strike list {}".format(self.new_strike_list))
+
+    def search_strike_list(self):
+        print("Code will fetch {} number of strike".format(self.num_of_filter))
+        required_strike = False
+        strike_list_to_add = []
+        strikes_matches = self.bps.strikes.search(self.search_strikes, limit=999999, sortorder="descending")
+        # print("Searched result {}".format(strikes_matches))
+        print("Length of Searched result {}".format(len(strikes_matches)))
+        print("Preparing to add: Index. Name | CVE | Direction")
+        for index, strike in enumerate(strikes_matches, 1):
+            strike_info = {}
+            cve_list = BpsOperations.get_cve_list(strike)
+            if len(cve_list) == 0:
+                continue
+            for cve_num in cve_list:
+                if self.check_cve_folder_exists(cve_num):
+                    continue
+                # print(strike)
+                strike_info["cve"] = cve_num
+                print("%d. %s | %s | %s" % (index, strike['name'], cve_num, strike["direction"]))
+                strike_info["direction"] = strike["direction"]
+                strike_info["strike"] = [{"id": strike['path']}]
+                # strike_list_to_add.append({"id": strike['path']})
+                strike_list_to_add.append(strike_info)
+                print("Number of strike has been added: {}".format(len(strike_list_to_add)))
+                if len(strike_list_to_add) == self.num_of_filter:
+                    print("Required number of strike {} has been reached".format(self.num_of_filter))
+                    required_strike = True
+                    break
+            if required_strike:
+                break
+        print("{0}\n Total Strike: {1}\n{0}".format("-"*80, len(strike_list_to_add)))
+        return strike_list_to_add
+
+    @staticmethod
+    def get_cve_list(strike):
+        cve_list = []
+        # if strike["reference"][0]["type"] == "CVE":
+        for ref in strike["reference"]:
+            print("ref {}".format(ref))
+            if "type" in ref.keys():
+                    cve_num = BpsOperations.get_cve_id(ref)
+                    if cve_num is not False:
+                        cve_list.append(cve_num)
+            elif "reference" in ref.keys():
+                if "type" in ref["reference"].keys():
+                    cve_num = BpsOperations.get_cve_id(ref["reference"])
+                    if cve_num is not False:
+                        cve_list.append(cve_num)
+                else:
+                    print("elif else ref: {}".format(ref))
+                    print("cve id not found !!")
+            else:
+                print("else ref: {}".format(ref))
+                print("cve id not found !!")
+        print("cve id list: {}".format(cve_list))
+        if len(cve_list) == 0:
+            print("Error !! CVE not found in strike {}".format(strike))
+        return cve_list
+
+    @staticmethod
+    def get_cve_id(ref):
+        cve_num = False
+        if ref["type"] == "CVE":
+            if "CVE " in ref["value"]:
+                cve_num = "CVE-{}".format(ref["value"].split("CVE ")[-1])
+            elif "CVE-" in ref["value"]:
+                cve_num = ref["value"]
+            elif "CVE" not in ref["value"]:
+                cve_num = "CVE-{}".format(ref["value"])
+            else:
+                raise Exception("Error!! Failed to get cve id {}".format(ref["value"]))
+        else:
+            print("ref type {}".format(ref["type"]))
+        print("cve id found {}".format(cve_num))
+        return cve_num
+
+    def reserve_port(self):
+        reserve_port_status = False
+        for port_list in self.port_list_of_list:
+            try:
+                self.port_list = self.get_reserve_port(port_list)
+                reserve_port_status = True
+                print("port list {}".format(self.port_list))
+                break
+            except Exception as e:
+                print("Failed to reserve the port {}".format(e))
+        if not reserve_port_status:
+            raise Exception("{0}\nError !! While reserving port.\n{0}".format("-" * 70))
+
+    def get_reserve_port(self, port_list):
+        for port in port_list:
+            print("Reserve Ports {}".format(port))
+            self.bps.topology.reserve([{'slot': self.slot_number, 'port': port, 'group': self.group_number}])
+        return port_list
+
+    def add_strike(self, strike):
+        # add strike into list
+        self.bps.strikeList.add(strike)
+        print("{0}\nAdded strike {1}\n{0}".format("+"*80, strike))
+        self.bps.strikeList.save()
+
+    def remove_strike(self):
+        # remove strike into list
+        # self.bps.strikeList.remove(strike_list_to_add)
+        # self.bps.strikeList.save()
+        get_strike_list = self.bps.strikeList.strikes.get()
+        for strike in get_strike_list:
+            self.bps.strikeList.remove([{"id": strike["path"]}])
+            print("{0}\nRemoved strike {1}\n{0}".format("-" * 80, strike["path"]))
+        self.bps.strikeList.save()
+
+    def create_test_model(self):
+        print("Create a new test model to use the newly created strikes")
+        self.bps.testmodel.new()
+        print('Adding an security component ')
+        self.bps.testmodel.add(name=self.test, type='security_all', active=True, component='security')
+        print('Configure with the created strike list')
+        pset = {
+                    "attackPlan": self.new_strike_list,
+                    "attackPlanIterations": 12,
+                    "profile": "Evasion_XDR_TEST"
+        }
+        # get the id of the 1st component
+        cmpid = self.bps.testmodel.component.get()[0]['id']
+        # set the profile on the component
+        self.bps.testmodel.component[cmpid].patch(pset)
+        self.bps.testmodel.saveAs(self.test, force=True)
+
+    def import_load_test(self):
+        import_file = os.path.join(self.dep_path, self.import_test_file)
+        status = self.bps.testmodel.importModel(self.test, import_file, True)
+        print("status of import test {} {}".format(import_file, status))
+        self.search_test()
+        pp("Loading test {}".format(self.bps.testmodel.load(template=self.test)))
+
+    def load_strike_list_in_test(self):
+        print("attaching strike list {} in test {}".format(self.new_strike_list, self.test))
+        pset = {
+            "attackPlan": self.new_strike_list,
+        }
+        cmpid = self.bps.testmodel.component.get()[0]['id']
+        self.bps.testmodel.component[cmpid].patch(pset)
+        self.bps.testmodel.saveAs(self.test, force=True)
+
+    def search_test(self):
+        out = self.bps.testmodel.search(searchString=self.test, limit=5, sort="name", sortorder="ascending")
+        print("search result of test {} {}".format(self.test, out))
+
+    def delete_test(self):
+        print("Deleting {} test".format(self.test))
+        self.bps.testmodel.delete(self.test)
+
+    def enable_user_setting(self):
+        ########################################
+        # To be able to run the test the following option needs to be enabled
+        # This will allow malware traffic to be executed on the test ports
+        self.bps.administration.userSettings.changeUserSetting(name='allowMalware', value=True)
+
+    def run_test(self):
+        ########################################
+        print("Run test and Get Stats:")
+        test_id_json = self.bps.testmodel.run(modelname=self.test, group=self.group_number)
+        self.test_id = str(test_id_json["runid"])
+        run_id = 'TEST-' + self.test_id
+        print("Test Run Id: %s" % run_id)
+
+        # get the ids for all tests running on the chassis
+        running_tests_Ids = [test['id'] for test in self.bps.topology.runningTest.get()]
+        # wait while the test is still running
+        while run_id in running_tests_Ids:
+             run_state = self.bps.topology.runningTest[run_id].get()
+             print("Status of test {}".format(run_state))
+             # print progress if test started
+             try:
+                #print ('progress: %s%% , runtime %ss' % (run_state['progress'], run_state['runtime'] ))
+                pp(self.bps.testmodel.realTimeStats(int(self.test_id), "attackStats", -1))
+             except:
+                print("Starting...")
+             print("wait {} sec...".format(self.wait_time))
+             time.sleep(self.wait_time)
+             #update the current running tests
+             running_tests_Ids = [test['id'] for test in self.bps.topology.runningTest.get()]
+
+    def block_traffic_on_reserve_ports(self):
+        #####################
+        # Do not allow malware traffic on the test ports  - anymore without confirmation
+        self.bps.administration.userSettings.changeUserSetting(name='allowMalware', value=False)
+
+    def get_report(self):
+        ######################
+        print("~The test finished the execution.")
+        results = self.bps.reports.search(searchString=self.test, limit=9999, sort="endTime",
+                                          sortorder="descending")
+        result = results[0]
+        print("%s execution duration %s ended with status: %s " % (result['name'], result['duration'],
+                                                                   result['result']))
+
+        #getting 3.4 Section: Synopsys Summary of Results from the Report
+        tabledata = self.bps.reports.getReportTable(runid=self.test_id, sectionId="3.4")
+        pp(tabledata)
+
+    def get_pcaps(self, strike):
+        cve_number, direction = strike["cve"], strike["direction"]
+        cve_folder = os.path.join(self.local_path, self.pcaps_folder, cve_number)
+        self.create_folder(cve_folder)
+        # get the right port
+        if direction == "s2c":
+            port_num = self.port_list[1]
+        elif direction == "c2s":
+            port_num = self.port_list[0]
+        else:
+            raise Exception("Error! Direction not found in strike {}".format(strike))
+        print("Exporting the capture for the port {} from port list {} and slot: {}.".format(port_num,
+                                                                                             self.port_list,
+                                                                                             self.slot_number))
+        print("Direction of filter {}.".format(direction))
+        # export the pcap
+        pcap_name_with_path = os.path.join(cve_folder, self.pcap_name)
+        print("Exporting {}....".format(pcap_name_with_path))
+        capture_para_dict = {
+            "port": port_num,
+            "slot": self.slot_number,
+            "dir": "both",
+            "size": 100,
+            "start": 0,
+            "sizetype": "megabytes",
+            "starttype": "megabytes"
+        }
+        self.bps.topology.exportCapture(pcap_name_with_path, capture_para_dict)
+
+        # for port_num in self.port_list:
+            # pcap_name = "{}.pcap".format(port_num)
+            # pcap_name_with_path = os.path.join(self.local_path, self.pcaps_folder, pcap_name)
+            # print("Exporting {}....".format(pcap_name_with_path))
+            # capture_para_dict = {
+            #     "port": port_num,
+            #     "slot": self.slot_number,
+            #     "dir": "both",
+            #     "size": 100,
+            #     "start": 0,
+            #     "sizetype": "megabytes",
+            #     "starttype": "megabytes"
+            # }
+            # self.bps.topology.exportCapture(pcap_name_with_path, capture_para_dict)
+        print("Waiting 5 secs")
+        time.sleep(5)
+        return cve_folder
+
+    def un_reserve_ports(self):
+        print("Un-reserving the ports")
+        for p in self.port_list:
+            self.bps.topology.unreserve([{'slot': self.slot_number, 'port': p, 'group': self.group_number}])
+
+    def split_pcap(self, cve_folder):
+        src_pcap = os.path.join(cve_folder, self.pcap_name)
+        dst_pcap_folder = os.path.join(cve_folder, "pcaps")
+        cmd = "{} -uvx -o \'{}\' \'{}\'".format(self.split_tool, dst_pcap_folder, src_pcap)
+        return BpsOperations.execute_cmd(cmd)
+
+    def remove_fcs_pcap(self, cve_folder):
+        # Iterate over files in the local folder
+        for root, dirs, files in os.walk(os.path.join(cve_folder, "pcaps")):
+            for file in files:
+                pcap_file = os.path.join(root, file)
+                fcs_pcap_file = os.path.join(root, "fcs_{}".format(file))
+                # Rename the file
+                os.rename(pcap_file, fcs_pcap_file)
+                base_dir = os.path.basename(root)
+                cmd = "tcprewrite -E -C -i \'{}\' -o \'{}\'".format(fcs_pcap_file, pcap_file)
+                BpsOperations.execute_cmd(cmd)
+                os.remove(fcs_pcap_file)
+
+
+    @staticmethod
+    def execute_cmd(cmd):
+        """
+                    Execute the sample using linux terminal /bin/bash
+        """
+        try:
+            # Use subprocess.run to execute the command
+            print("cmd: {}".format(cmd))
+            # Use subprocess.run to execute the command
+            result = subprocess.run(cmd, shell=True, check=True, text=True)
+            print(f"Command executed successfully. Output:\n{result.stdout}")
+            return "success"
+        except subprocess.CalledProcessError as e:
+            print(f"Error: Command execution failed. Return code: {e.returncode}\nError output:\n{e.output}")
+            return "exception-{}".format(e)
+
+    def uplodad_pcap_s3(self, cve_folder):
+        s3_folder_prefix = os.path.basename(cve_folder)
+        # append new cve list
+        self.new_cve_list["cve"].append(s3_folder_prefix)
+        prefix = os.path.join(self.bucket_prefix, s3_folder_prefix)
+        # Iterate over files in the local folder
+        for root, dirs, files in os.walk(os.path.join(cve_folder, "pcaps")):
+            for file in files:
+                local_file_path = os.path.join(root, file)
+                base_dir = os.path.basename(root)
+                # s3_key = os.path.join(s3_folder_prefix, base_dir, file)
+                s3_key = os.path.join(prefix, base_dir, file)
+                # Upload each file to S3
+                self.s3.upload_file(local_file_path, self.bucket_name, s3_key)
+                print(f"Uploaded {local_file_path} to S3://{self.bucket_name}/{s3_key}")
+
+    def check_cve_folder_exists(self, cve_num):
+        objects = self.s3.list_objects_v2(Bucket=self.bucket_name, Prefix=os.path.join(self.bucket_prefix, cve_num))
+        # Check if any objects were found in the specified path
+        if 'Contents' in objects:
+            print("CVE {} found in S3 Bucket {}".format(cve_num, self.bucket_name))
+            return True
+        else:
+            print("CVE {} not found in S3 Bucket {}".format(cve_num, self.bucket_name))
+            return False
+
+    def create_folder(self, folder_name):
+        if os.path.exists(folder_name):
+            shutil.rmtree(folder_name)
+        os.mkdir(folder_name)
+
+    def logout(self):
+        self.bps.logout()
+
+    def dump_new_cve_list(self, config):
+        """
+            Update and dump the cve and pcap information in files
+        """
+        filter_message = "Searching for new filters applicable to CVEs identified at "
+        filter_message += "[tracker_pcap.json]({})\n\n".format(config.get_tracker_file_url())
+        # if os.path.exists(self.new_cve_list_file):
+        #     os.remove(self.new_cve_list_file)
+        new_cve_list = self.new_cve_list['cve']
+        print("New CVE ids {}".format(new_cve_list))
+        if len(new_cve_list) > 0:
+            # get the filter information of cve_id
+            dv_filters, dv_filters_dict = tp_find_filter.main(self.dv_metadata_path, new_cve_list, config)
+            # get tracker file path
+            tracker_file_path = "{}/{}".format(self.artefact_folder, self.tracker_file)
+            # loading tracker data from S3 Bucket
+            tracker_data = self.download_file_from_s3(self.tracker_file, tracker_file_path)
+            # update the tracker if some filter didn't exist
+            updated_tracker_data, new_filter_list = track_filter_id_cve_pcap.parse_update_tracker_pcap(self.bucket_name,
+                                                                                                       dv_filters_dict,
+                                                                                                       tracker_data,
+                                                                                        pcap_prefix=self.bucket_prefix)
+            self.upload_into_s3_bucket(updated_tracker_data, self.tracker_file, tracker_file_path)
+            header = "Added CVE ID's:\n\n"
+            filter_message += teams_notification.format_cve_list(header, new_cve_list)
+            # no filter found for the cve
+            return filter_message, dv_filters_dict
+
+    def dump_no_filter_cve(self, dv_filters_dict):
+        """
+            download no filter file and append the cve values
+        """
+        # update no filter found for cve file
+        no_filter_found_path = "{}/{}".format(self.artefact_folder, self.no_filter_found_file)
+        no_filter_cve_list = self.download_file_from_s3(self.no_filter_found_file, no_filter_found_path)
+        no_filter_cve_list.extend(dv_filters_dict["filters_does_not_exist"])
+        unique_cve_list = list(set(no_filter_cve_list))
+        self.upload_into_s3_bucket(unique_cve_list, self.no_filter_found_file, no_filter_found_path)
+
+    def download_file_from_s3(self, file, file_path):
+        if os.path.exists(file):
+            os.remove(file)
+        print("Downloading {} file from S3 Bucket {}".format(file_path, self.bucket_name))
+        # download the tracker file from S3 bucket
+        self.s3.download_file(self.bucket_name, file_path, file)
+        with open(file) as fout:
+            file_data = json.load(fout)
+        return file_data
+
+    def upload_into_s3_bucket(self, data, file, file_path):
+        # updating tracker file
+        with open(file, "w") as fin:
+            json.dump(data, fin, indent=4)
+        with open(file, 'rb') as file:
+            self.s3.put_object(Bucket=self.bucket_name, Key=file_path, Body=file)
+
+
+
+
+if __name__ == '__main__':
+    parse = argparse.ArgumentParser()
+    parse.add_argument("--bps_system", type=str, help="Please provide the bps system ip")
+    parse.add_argument("--bps_user", type=str, help="Please provide the bps user name")
+    parse.add_argument("--bps_pass", type=str, help="Please provide the bps password")
+    parse.add_argument("--bps_search_strikes", type=str, help="Please provide search strike criteria")
+    parse.add_argument("--bps_number_of_filter", type=str, help="Please provide the number of filter to "
+                                                                "process")
+    parse.add_argument("--access_key_id", type=str, help="Access key id to upload pcaps")
+    parse.add_argument("--secret_key", type=str, help="Secret key upload pcaps")
+    parse.add_argument("--bucket_name", type=str, help="Bucket name upload pcaps")
+    parse.add_argument("--dv_metadata_path", type=str, help="Please dv metadata path")
+    parse.add_argument("--teams_webhook_url", type=str, help="Please provide teams webhook url")
+    parse.add_argument("--jenkins_url", type=str, help="Jenkins build url")
+    parse.add_argument("--build_user", type=str, help="Build user")
+    args = parse.parse_args()
+
+    conf_file = "config/.config.ini"
+    config = Config(conf_file)
+    config.set_bp_ip(args.bps_system)
+    config.set_bp_user(args.bps_user)
+    config.set_bp_pwd(args.bps_pass)
+    config.set_search_strikes(args.bps_search_strikes)
+    config.set_number_of_filter(args.bps_number_of_filter)
+    config.set_access_key_id(args.access_key_id)
+    config.set_secret_key(args.secret_key)
+    config.set_bucket_name(args.bucket_name)
+    # creating object
+    bps = BpsOperations(config, args.dv_metadata_path)
+    if bps.main():
+        # Configure Boto3 with your credentials
+        boto3.setup_default_session(
+            aws_access_key_id=args.access_key_id,
+            aws_secret_access_key=args.secret_key,
+        )
+        new_filter_info_tracker, dv_filters_dict = bps.dump_new_cve_list(config)
+        bps.dump_no_filter_cve(dv_filters_dict)
+        filter_info_no_filter = "Searching for new filters applicable to CVEs identified at "
+        filter_info_no_filter += "[no_filter_found_cve.json]({})\n\n".format(config.get_no_filter_cve_url())
+        message = teams_notification.format_teams_message(new_filter_info_tracker, filter_info_no_filter,
+                                                          teams_notification.get_pcap_folder_url(config),
+                                                          teams_notification.get_jenkins_url(args.jenkins_url),
+                                                          args.build_user)
+        teams_notification.send_teams_message(args.teams_webhook_url, message)
+
+
+

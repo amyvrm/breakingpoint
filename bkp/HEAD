@@ -1,0 +1,2477 @@
+{
+    "tp": {
+        "CVE-2023-22518": [
+            {
+                "10.1.0.174_17289_10.2.0.3_8090_3.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-22518/tcp_syn/10.1.0.174_17289_10.2.0.3_8090_3.pcap",
+                        "filter_id": "37609",
+                        "filter_name": "SMB: Possible Ransomware File Creation Request With Specific Extension",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    },
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-22518/tcp_syn/10.1.0.174_17289_10.2.0.3_8090_3.pcap",
+                        "filter_id": "43453",
+                        "filter_name": "HTTP: Atlassian Confluence Data Center and Server Improper Authorization Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    },
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-22518/tcp_syn/10.1.0.174_17289_10.2.0.3_8090_3.pcap",
+                        "filter_id": "43467",
+                        "filter_name": "HTTP: Trojan-Downloader.Linux.Agaex.A Runtime Detection",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.0.174_27563_10.2.0.3_8090_3.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-22518/tcp_syn/10.1.0.174_27563_10.2.0.3_8090_3.pcap",
+                        "filter_id": "37609",
+                        "filter_name": "SMB: Possible Ransomware File Creation Request With Specific Extension",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    },
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-22518/tcp_syn/10.1.0.174_27563_10.2.0.3_8090_3.pcap",
+                        "filter_id": "43453",
+                        "filter_name": "HTTP: Atlassian Confluence Data Center and Server Improper Authorization Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    },
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-22518/tcp_syn/10.1.0.174_27563_10.2.0.3_8090_3.pcap",
+                        "filter_id": "43467",
+                        "filter_name": "HTTP: Trojan-Downloader.Linux.Agaex.A Runtime Detection",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            }
+        ],
+        "CVE-2023-21547": [
+            {
+                "10.1.0.14_32792_10.2.0.1_500_3.pcap": [
+                    {
+                        "status": "pass",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-21547/udp/10.1.0.14_32792_10.2.0.1_500_3.pcap",
+                        "filter_id": "41892",
+                        "filter_name": "ISAKMP: Microsoft Windows IKEEXT Vendor ID Null Pointer Dereference Vulnerability (ZDI-23-009)",
+                        "first_run": "20240216033258",
+                        "last_run": "20240216033258"
+                    }
+                ]
+            }
+        ],
+        "CVE-2023-21608": [
+            {
+                "10.1.1.226_8969_10.2.0.3_80_4.pcap": [
+                    {
+                        "status": "pass",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-21608/tcp_syn/10.1.1.226_8969_10.2.0.3_80_4.pcap",
+                        "filter_id": "42118",
+                        "filter_name": "HTTP: Adobe Acrobat Reader DC richText Use-After-Free Vulnerability (ZDI-23-061)",
+                        "first_run": "20240216033258",
+                        "last_run": "20240216033258"
+                    }
+                ]
+            }
+        ],
+        "CVE-2023-25136": [
+            {
+                "10.1.0.103_65409_10.2.0.4_22_4.pcap": [
+                    {
+                        "status": "pass",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-25136/tcp_syn/10.1.0.103_65409_10.2.0.4_22_4.pcap",
+                        "filter_id": "42369",
+                        "filter_name": "SSH: OpenSSH sshd SSH_OLD_DHGEX Usage",
+                        "first_run": "20240216033258",
+                        "last_run": "20240216033258"
+                    }
+                ]
+            },
+            {
+                "10.1.0.154_7061_10.2.0.4_22_3.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-25136/tcp_syn/10.1.0.154_7061_10.2.0.4_22_3.pcap",
+                        "filter_id": "42369",
+                        "filter_name": "SSH: OpenSSH sshd SSH_OLD_DHGEX Usage",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.0.194_5722_10.2.0.5_22_4.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-25136/tcp_syn/10.1.0.194_5722_10.2.0.5_22_4.pcap",
+                        "filter_id": "42369",
+                        "filter_name": "SSH: OpenSSH sshd SSH_OLD_DHGEX Usage",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.0.239_22600_10.2.0.3_22_4.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-25136/tcp_syn/10.1.0.239_22600_10.2.0.3_22_4.pcap",
+                        "filter_id": "42369",
+                        "filter_name": "SSH: OpenSSH sshd SSH_OLD_DHGEX Usage",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.0.69_54228_10.2.0.4_22_4.pcap": [
+                    {
+                        "status": "pass",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-25136/tcp_syn/10.1.0.69_54228_10.2.0.4_22_4.pcap",
+                        "filter_id": "42369",
+                        "filter_name": "SSH: OpenSSH sshd SSH_OLD_DHGEX Usage",
+                        "first_run": "20240216033258",
+                        "last_run": "20240216033258"
+                    }
+                ]
+            },
+            {
+                "10.1.0.7_42083_10.2.0.1_22_4.pcap": [
+                    {
+                        "status": "pass",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-25136/tcp_syn/10.1.0.7_42083_10.2.0.1_22_4.pcap",
+                        "filter_id": "42369",
+                        "filter_name": "SSH: OpenSSH sshd SSH_OLD_DHGEX Usage",
+                        "first_run": "20240216033258",
+                        "last_run": "20240216033258"
+                    }
+                ]
+            },
+            {
+                "10.1.0.86_41502_10.2.0.2_22_4.pcap": [
+                    {
+                        "status": "pass",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-25136/tcp_syn/10.1.0.86_41502_10.2.0.2_22_4.pcap",
+                        "filter_id": "42369",
+                        "filter_name": "SSH: OpenSSH sshd SSH_OLD_DHGEX Usage",
+                        "first_run": "20240216033258",
+                        "last_run": "20240216033258"
+                    }
+                ]
+            },
+            {
+                "10.1.0.86_52633_10.2.0.1_22_4.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-25136/tcp_syn/10.1.0.86_52633_10.2.0.1_22_4.pcap",
+                        "filter_id": "42369",
+                        "filter_name": "SSH: OpenSSH sshd SSH_OLD_DHGEX Usage",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.0.91_62873_10.2.0.2_22_4.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-25136/tcp_syn/10.1.0.91_62873_10.2.0.2_22_4.pcap",
+                        "filter_id": "42369",
+                        "filter_name": "SSH: OpenSSH sshd SSH_OLD_DHGEX Usage",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.102_36261_10.2.0.3_22_4.pcap": [
+                    {
+                        "status": "pass",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-25136/tcp_syn/10.1.1.102_36261_10.2.0.3_22_4.pcap",
+                        "filter_id": "42369",
+                        "filter_name": "SSH: OpenSSH sshd SSH_OLD_DHGEX Usage",
+                        "first_run": "20240216033258",
+                        "last_run": "20240216033258"
+                    }
+                ]
+            },
+            {
+                "10.1.1.102_56534_10.2.0.1_22_4.pcap": [
+                    {
+                        "status": "pass",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-25136/tcp_syn/10.1.1.102_56534_10.2.0.1_22_4.pcap",
+                        "filter_id": "42369",
+                        "filter_name": "SSH: OpenSSH sshd SSH_OLD_DHGEX Usage",
+                        "first_run": "20240216033258",
+                        "last_run": "20240216033258"
+                    }
+                ]
+            },
+            {
+                "10.1.1.105_39001_10.2.0.3_22_4.pcap": [
+                    {
+                        "status": "pass",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-25136/tcp_syn/10.1.1.105_39001_10.2.0.3_22_4.pcap",
+                        "filter_id": "42369",
+                        "filter_name": "SSH: OpenSSH sshd SSH_OLD_DHGEX Usage",
+                        "first_run": "20240216033258",
+                        "last_run": "20240216033258"
+                    }
+                ]
+            },
+            {
+                "10.1.1.13_21953_10.2.0.4_22_3.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-25136/tcp_syn/10.1.1.13_21953_10.2.0.4_22_3.pcap",
+                        "filter_id": "42369",
+                        "filter_name": "SSH: OpenSSH sshd SSH_OLD_DHGEX Usage",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.16_21270_10.2.0.3_22_4.pcap": [
+                    {
+                        "status": "pass",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-25136/tcp_syn/10.1.1.16_21270_10.2.0.3_22_4.pcap",
+                        "filter_id": "42369",
+                        "filter_name": "SSH: OpenSSH sshd SSH_OLD_DHGEX Usage",
+                        "first_run": "20240216033258",
+                        "last_run": "20240216033258"
+                    }
+                ]
+            },
+            {
+                "10.1.1.19_64500_10.2.0.4_22_4.pcap": [
+                    {
+                        "status": "pass",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-25136/tcp_syn/10.1.1.19_64500_10.2.0.4_22_4.pcap",
+                        "filter_id": "42369",
+                        "filter_name": "SSH: OpenSSH sshd SSH_OLD_DHGEX Usage",
+                        "first_run": "20240216033258",
+                        "last_run": "20240216033258"
+                    }
+                ]
+            },
+            {
+                "10.1.1.209_43408_10.2.0.5_22_4.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-25136/tcp_syn/10.1.1.209_43408_10.2.0.5_22_4.pcap",
+                        "filter_id": "42369",
+                        "filter_name": "SSH: OpenSSH sshd SSH_OLD_DHGEX Usage",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.45_58620_10.2.0.3_22_4.pcap": [
+                    {
+                        "status": "pass",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-25136/tcp_syn/10.1.1.45_58620_10.2.0.3_22_4.pcap",
+                        "filter_id": "42369",
+                        "filter_name": "SSH: OpenSSH sshd SSH_OLD_DHGEX Usage",
+                        "first_run": "20240216033258",
+                        "last_run": "20240216033258"
+                    }
+                ]
+            }
+        ],
+        "CVE-2023-22374": [
+            {
+                "10.1.0.138_17026_10.2.0.2_443_3.pcap": [
+                    {
+                        "status": "pass",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-22374/tcp_syn/10.1.0.138_17026_10.2.0.2_443_3.pcap",
+                        "filter_id": "42452",
+                        "filter_name": "HTTP: F5 BIG-IP and BIG-IQ iControl iControlPortal.cgi Format String Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240216033258"
+                    }
+                ]
+            },
+            {
+                "10.1.0.86_57203_10.2.0.5_443_3.pcap": [
+                    {
+                        "status": "pass",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-22374/tcp_syn/10.1.0.86_57203_10.2.0.5_443_3.pcap",
+                        "filter_id": "42452",
+                        "filter_name": "HTTP: F5 BIG-IP and BIG-IQ iControl iControlPortal.cgi Format String Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240216033258"
+                    }
+                ]
+            },
+            {
+                "10.1.1.137_32030_10.2.0.4_443_3.pcap": [
+                    {
+                        "status": "pass",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-22374/tcp_syn/10.1.1.137_32030_10.2.0.4_443_3.pcap",
+                        "filter_id": "42452",
+                        "filter_name": "HTTP: F5 BIG-IP and BIG-IQ iControl iControlPortal.cgi Format String Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240216033258"
+                    }
+                ]
+            },
+            {
+                "10.1.1.184_56770_10.2.0.3_443_3.pcap": [
+                    {
+                        "status": "pass",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-22374/tcp_syn/10.1.1.184_56770_10.2.0.3_443_3.pcap",
+                        "filter_id": "42452",
+                        "filter_name": "HTTP: F5 BIG-IP and BIG-IQ iControl iControlPortal.cgi Format String Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240216033258"
+                    }
+                ]
+            },
+            {
+                "10.1.1.27_29712_10.2.0.2_443_3.pcap": [
+                    {
+                        "status": "pass",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-22374/tcp_syn/10.1.1.27_29712_10.2.0.2_443_3.pcap",
+                        "filter_id": "42452",
+                        "filter_name": "HTTP: F5 BIG-IP and BIG-IQ iControl iControlPortal.cgi Format String Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240216033258"
+                    }
+                ]
+            },
+            {
+                "10.1.1.64_33135_10.2.0.2_443_3.pcap": [
+                    {
+                        "status": "pass",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-22374/tcp_syn/10.1.1.64_33135_10.2.0.2_443_3.pcap",
+                        "filter_id": "42452",
+                        "filter_name": "HTTP: F5 BIG-IP and BIG-IQ iControl iControlPortal.cgi Format String Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240216033258"
+                    }
+                ]
+            },
+            {
+                "10.1.1.76_15084_10.2.0.5_443_3.pcap": [
+                    {
+                        "status": "pass",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-22374/tcp_syn/10.1.1.76_15084_10.2.0.5_443_3.pcap",
+                        "filter_id": "42452",
+                        "filter_name": "HTTP: F5 BIG-IP and BIG-IQ iControl iControlPortal.cgi Format String Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240216033258"
+                    }
+                ]
+            }
+        ],
+        "CVE-2023-21716": [
+            {
+                "10.1.0.106_11824_10.2.0.3_80_4.pcap": [
+                    {
+                        "status": "pass",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-21716/tcp_syn/10.1.0.106_11824_10.2.0.3_80_4.pcap",
+                        "filter_id": "42500",
+                        "filter_name": "HTTP: Microsoft Word RTF Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240216033258"
+                    }
+                ]
+            },
+            {
+                "10.1.0.120_33542_10.2.0.4_80_3.pcap": [
+                    {
+                        "status": "pass",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-21716/tcp_syn/10.1.0.120_33542_10.2.0.4_80_3.pcap",
+                        "filter_id": "42500",
+                        "filter_name": "HTTP: Microsoft Word RTF Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240216033258"
+                    }
+                ]
+            },
+            {
+                "10.1.0.136_59334_10.2.0.5_80_4.pcap": [
+                    {
+                        "status": "pass",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-21716/tcp_syn/10.1.0.136_59334_10.2.0.5_80_4.pcap",
+                        "filter_id": "42500",
+                        "filter_name": "HTTP: Microsoft Word RTF Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240216033258"
+                    }
+                ]
+            },
+            {
+                "10.1.0.29_31426_10.2.0.5_80_3.pcap": [
+                    {
+                        "status": "pass",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-21716/tcp_syn/10.1.0.29_31426_10.2.0.5_80_3.pcap",
+                        "filter_id": "42500",
+                        "filter_name": "HTTP: Microsoft Word RTF Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240216033258"
+                    }
+                ]
+            },
+            {
+                "10.1.1.240_22024_10.2.0.3_80_4.pcap": [
+                    {
+                        "status": "pass",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-21716/tcp_syn/10.1.1.240_22024_10.2.0.3_80_4.pcap",
+                        "filter_id": "42500",
+                        "filter_name": "HTTP: Microsoft Word RTF Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240216033258"
+                    }
+                ]
+            },
+            {
+                "10.1.1.66_20945_10.2.0.3_80_4.pcap": [
+                    {
+                        "status": "pass",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-21716/tcp_syn/10.1.1.66_20945_10.2.0.3_80_4.pcap",
+                        "filter_id": "42500",
+                        "filter_name": "HTTP: Microsoft Word RTF Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240216033258"
+                    }
+                ]
+            }
+        ],
+        "CVE-2023-27350": [
+            {
+                "10.1.0.40_21453_10.2.0.4_9191_3.pcap": [
+                    {
+                        "status": "pass",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-27350/tcp_syn/10.1.0.40_21453_10.2.0.4_9191_3.pcap",
+                        "filter_id": "42626",
+                        "filter_name": "HTTP: PaperCut MF and NG SetupCompleted Authentication Bypass Vulnerability (ZDI-23-233)",
+                        "first_run": "20240216033258",
+                        "last_run": "20240216033258"
+                    },
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-27350/tcp_syn/10.1.0.40_21453_10.2.0.4_9191_3.pcap",
+                        "filter_id": "42678",
+                        "filter_name": "HTTP: Trojan-Downloader.Shell.Cmstpass.A Runtime Detection (SCRIPT_DOWNLOAD)",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    },
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-27350/tcp_syn/10.1.0.40_21453_10.2.0.4_9191_3.pcap",
+                        "filter_id": "42679",
+                        "filter_name": "HTTP: Trojan-Downloader.Shell.Cmstpass.A Runtime Detection (SCRIPT_CONTENT)",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    },
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-27350/tcp_syn/10.1.0.40_21453_10.2.0.4_9191_3.pcap",
+                        "filter_id": "42715",
+                        "filter_name": "HTTP: Trojan.Shell.Cowjlyom.A Runtime Detection (Data Exfiltration 1)",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    },
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-27350/tcp_syn/10.1.0.40_21453_10.2.0.4_9191_3.pcap",
+                        "filter_id": "42716",
+                        "filter_name": "HTTP: Trojan.Shell.Cowjlyom.A Runtime Detection (Data Exfiltration 2)",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    },
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-27350/tcp_syn/10.1.0.40_21453_10.2.0.4_9191_3.pcap",
+                        "filter_id": "42732",
+                        "filter_name": "HTTP: Trojan.MSIL.Soldier.A Runtime Detection",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    },
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-27350/tcp_syn/10.1.0.40_21453_10.2.0.4_9191_3.pcap",
+                        "filter_id": "42734",
+                        "filter_name": "HTTP: Trojan-Downloader.MSIL.Drokbk.A Runtime Detection",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    },
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-27350/tcp_syn/10.1.0.40_21453_10.2.0.4_9191_3.pcap",
+                        "filter_id": "42742",
+                        "filter_name": "HTTP: Trojan.VBA.RooftopMelt.A Runtime Detection",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            }
+        ],
+        "CVE-2023-26360": [
+            {
+                "10.1.0.150_1136_10.2.0.2_8500_3.pcap": [
+                    {
+                        "status": "pass",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-26360/tcp_syn/10.1.0.150_1136_10.2.0.2_8500_3.pcap",
+                        "filter_id": "42650",
+                        "filter_name": "HTTP: Adobe ColdFusion convertToTemplateProxy Insecure Deserialization Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240216033258"
+                    }
+                ]
+            },
+            {
+                "10.1.0.150_1144_10.2.0.2_8500_3.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-26360/tcp_syn/10.1.0.150_1144_10.2.0.2_8500_3.pcap",
+                        "filter_id": "42650",
+                        "filter_name": "HTTP: Adobe ColdFusion convertToTemplateProxy Insecure Deserialization Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            }
+        ],
+        "CVE-2023-21554": [
+            {
+                "10.1.0.11_30242_10.2.0.4_1801_4.pcap": [
+                    {
+                        "status": "pass",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-21554/tcp_syn/10.1.0.11_30242_10.2.0.4_1801_4.pcap",
+                        "filter_id": "42672",
+                        "filter_name": "TCP: Microsoft Windows Message Queuing Service Traffic Detected",
+                        "first_run": "20240216033258",
+                        "last_run": "20240216033258"
+                    },
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-21554/tcp_syn/10.1.0.11_30242_10.2.0.4_1801_4.pcap",
+                        "filter_id": "42743",
+                        "filter_name": "TCP: Microsoft Windows Message Queuing Service Out-of-Bounds Write Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.0.171_11241_10.2.0.1_1801_4.pcap": [
+                    {
+                        "status": "pass",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-21554/tcp_syn/10.1.0.171_11241_10.2.0.1_1801_4.pcap",
+                        "filter_id": "42672",
+                        "filter_name": "TCP: Microsoft Windows Message Queuing Service Traffic Detected",
+                        "first_run": "20240216033258",
+                        "last_run": "20240216033258"
+                    },
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-21554/tcp_syn/10.1.0.171_11241_10.2.0.1_1801_4.pcap",
+                        "filter_id": "42743",
+                        "filter_name": "TCP: Microsoft Windows Message Queuing Service Out-of-Bounds Write Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.0.182_5985_10.2.0.4_1801_4.pcap": [
+                    {
+                        "status": "pass",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-21554/tcp_syn/10.1.0.182_5985_10.2.0.4_1801_4.pcap",
+                        "filter_id": "42672",
+                        "filter_name": "TCP: Microsoft Windows Message Queuing Service Traffic Detected",
+                        "first_run": "20240216033258",
+                        "last_run": "20240216033258"
+                    },
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-21554/tcp_syn/10.1.0.182_5985_10.2.0.4_1801_4.pcap",
+                        "filter_id": "42743",
+                        "filter_name": "TCP: Microsoft Windows Message Queuing Service Out-of-Bounds Write Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.0.53_4709_10.2.0.3_1801_4.pcap": [
+                    {
+                        "status": "pass",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-21554/tcp_syn/10.1.0.53_4709_10.2.0.3_1801_4.pcap",
+                        "filter_id": "42672",
+                        "filter_name": "TCP: Microsoft Windows Message Queuing Service Traffic Detected",
+                        "first_run": "20240216033258",
+                        "last_run": "20240216033258"
+                    },
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-21554/tcp_syn/10.1.0.53_4709_10.2.0.3_1801_4.pcap",
+                        "filter_id": "42743",
+                        "filter_name": "TCP: Microsoft Windows Message Queuing Service Out-of-Bounds Write Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.0.70_65488_10.2.0.1_1801_4.pcap": [
+                    {
+                        "status": "pass",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-21554/tcp_syn/10.1.0.70_65488_10.2.0.1_1801_4.pcap",
+                        "filter_id": "42672",
+                        "filter_name": "TCP: Microsoft Windows Message Queuing Service Traffic Detected",
+                        "first_run": "20240216033258",
+                        "last_run": "20240216033258"
+                    },
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-21554/tcp_syn/10.1.0.70_65488_10.2.0.1_1801_4.pcap",
+                        "filter_id": "42743",
+                        "filter_name": "TCP: Microsoft Windows Message Queuing Service Out-of-Bounds Write Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            }
+        ],
+        "CVE-2023-24941": [
+            {
+                "10.1.1.93_1106_10.2.0.2_2049_47.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_1106_10.2.0.2_2049_47.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_1204_10.2.0.2_2049_79.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_1204_10.2.0.2_2049_79.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_1342_10.2.0.2_2049_14.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_1342_10.2.0.2_2049_14.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_15707_10.2.0.2_2049_38.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_15707_10.2.0.2_2049_38.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_1747_10.2.0.2_2049_79.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_1747_10.2.0.2_2049_79.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_22145_10.2.0.2_2049_50.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_22145_10.2.0.2_2049_50.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_22232_10.2.0.2_2049_82.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_22232_10.2.0.2_2049_82.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_2438_10.2.0.2_2049_41.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_2438_10.2.0.2_2049_41.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_2528_10.2.0.2_2049_69.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_2528_10.2.0.2_2049_69.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_2759_10.2.0.2_2049_9.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_2759_10.2.0.2_2049_9.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_36767_10.2.0.2_2049_7.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_36767_10.2.0.2_2049_7.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_38729_10.2.0.2_2049_47.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_38729_10.2.0.2_2049_47.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_42685_10.2.0.2_2049_78.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_42685_10.2.0.2_2049_78.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_43862_10.2.0.2_2049_13.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_43862_10.2.0.2_2049_13.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_44916_10.2.0.2_2049_85.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_44916_10.2.0.2_2049_85.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_46366_10.2.0.2_2049_45.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_46366_10.2.0.2_2049_45.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_49501_10.2.0.2_2049_77.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_49501_10.2.0.2_2049_77.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_61756_10.2.0.2_2049_3.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_61756_10.2.0.2_2049_3.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_61805_10.2.0.2_2049_86.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_61805_10.2.0.2_2049_86.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_61925_10.2.0.2_2049_44.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_61925_10.2.0.2_2049_44.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_61936_10.2.0.2_2049_73.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_61936_10.2.0.2_2049_73.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_61937_10.2.0.2_2049_12.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_61937_10.2.0.2_2049_12.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_61942_10.2.0.2_2049_71.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_61942_10.2.0.2_2049_71.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_61984_10.2.0.2_2049_39.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_61984_10.2.0.2_2049_39.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_61997_10.2.0.2_2049_52.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_61997_10.2.0.2_2049_52.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_61999_10.2.0.2_2049_85.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_61999_10.2.0.2_2049_85.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_62031_10.2.0.2_2049_7.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_62031_10.2.0.2_2049_7.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_62102_10.2.0.2_2049_52.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_62102_10.2.0.2_2049_52.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_62174_10.2.0.2_2049_14.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_62174_10.2.0.2_2049_14.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_62205_10.2.0.2_2049_84.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_62205_10.2.0.2_2049_84.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_62206_10.2.0.2_2049_45.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_62206_10.2.0.2_2049_45.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_62218_10.2.0.2_2049_76.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_62218_10.2.0.2_2049_76.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_62261_10.2.0.2_2049_5.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_62261_10.2.0.2_2049_5.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_62262_10.2.0.2_2049_10.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_62262_10.2.0.2_2049_10.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_62264_10.2.0.2_2049_71.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_62264_10.2.0.2_2049_71.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_62280_10.2.0.2_2049_39.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_62280_10.2.0.2_2049_39.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_62282_10.2.0.2_2049_8.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_62282_10.2.0.2_2049_8.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_62291_10.2.0.2_2049_15.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_62291_10.2.0.2_2049_15.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_62292_10.2.0.2_2049_81.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_62292_10.2.0.2_2049_81.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_62293_10.2.0.2_2049_42.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_62293_10.2.0.2_2049_42.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_62297_10.2.0.2_2049_55.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_62297_10.2.0.2_2049_55.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_62299_10.2.0.2_2049_10.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_62299_10.2.0.2_2049_10.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_62301_10.2.0.2_2049_55.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_62301_10.2.0.2_2049_55.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_62302_10.2.0.2_2049_6.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_62302_10.2.0.2_2049_6.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_62309_10.2.0.2_2049_38.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_62309_10.2.0.2_2049_38.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_62325_10.2.0.2_2049_53.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_62325_10.2.0.2_2049_53.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_62371_10.2.0.2_2049_4.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_62371_10.2.0.2_2049_4.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_62389_10.2.0.2_2049_49.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_62389_10.2.0.2_2049_49.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_62440_10.2.0.2_2049_81.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_62440_10.2.0.2_2049_81.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_62445_10.2.0.2_2049_16.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_62445_10.2.0.2_2049_16.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_62534_10.2.0.2_2049_80.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_62534_10.2.0.2_2049_80.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_62577_10.2.0.2_2049_43.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_62577_10.2.0.2_2049_43.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_62607_10.2.0.2_2049_56.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_62607_10.2.0.2_2049_56.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_62628_10.2.0.2_2049_5.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_62628_10.2.0.2_2049_5.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_62642_10.2.0.2_2049_48.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_62642_10.2.0.2_2049_48.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_62643_10.2.0.2_2049_82.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_62643_10.2.0.2_2049_82.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_62664_10.2.0.2_2049_16.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_62664_10.2.0.2_2049_16.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_62670_10.2.0.2_2049_50.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_62670_10.2.0.2_2049_50.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_62671_10.2.0.2_2049_83.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_62671_10.2.0.2_2049_83.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_62673_10.2.0.2_2049_11.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_62673_10.2.0.2_2049_11.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_62714_10.2.0.2_2049_77.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_62714_10.2.0.2_2049_77.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_62723_10.2.0.2_2049_40.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_62723_10.2.0.2_2049_40.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_62800_10.2.0.2_2049_53.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_62800_10.2.0.2_2049_53.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_62802_10.2.0.2_2049_9.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_62802_10.2.0.2_2049_9.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_62805_10.2.0.2_2049_48.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_62805_10.2.0.2_2049_48.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_62818_10.2.0.2_2049_15.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_62818_10.2.0.2_2049_15.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_62819_10.2.0.2_2049_43.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_62819_10.2.0.2_2049_43.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_62821_10.2.0.2_2049_73.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_62821_10.2.0.2_2049_73.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_62827_10.2.0.2_2049_4.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_62827_10.2.0.2_2049_4.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_62894_10.2.0.2_2049_83.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_62894_10.2.0.2_2049_83.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_63034_10.2.0.2_2049_44.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_63034_10.2.0.2_2049_44.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_63342_10.2.0.2_2049_70.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_63342_10.2.0.2_2049_70.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_63833_10.2.0.2_2049_11.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_63833_10.2.0.2_2049_11.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_63997_10.2.0.2_2049_76.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_63997_10.2.0.2_2049_76.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_64080_10.2.0.2_2049_41.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_64080_10.2.0.2_2049_41.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_64147_10.2.0.2_2049_56.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_64147_10.2.0.2_2049_56.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_64241_10.2.0.2_2049_8.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_64241_10.2.0.2_2049_8.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_64247_10.2.0.2_2049_74.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_64247_10.2.0.2_2049_74.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_64269_10.2.0.2_2049_41.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_64269_10.2.0.2_2049_41.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_64293_10.2.0.2_2049_54.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_64293_10.2.0.2_2049_54.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_64446_10.2.0.2_2049_6.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_64446_10.2.0.2_2049_6.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_64470_10.2.0.2_2049_46.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_64470_10.2.0.2_2049_46.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_64640_10.2.0.2_2049_75.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_64640_10.2.0.2_2049_75.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_64778_10.2.0.2_2049_13.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_64778_10.2.0.2_2049_13.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_64805_10.2.0.2_2049_78.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_64805_10.2.0.2_2049_78.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_64809_10.2.0.2_2049_42.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_64809_10.2.0.2_2049_42.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_64831_10.2.0.2_2049_54.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_64831_10.2.0.2_2049_54.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_64837_10.2.0.2_2049_9.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_64837_10.2.0.2_2049_9.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_65056_10.2.0.2_2049_46.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_65056_10.2.0.2_2049_46.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_65071_10.2.0.2_2049_74.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_65071_10.2.0.2_2049_74.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_65477_10.2.0.2_2049_12.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_65477_10.2.0.2_2049_12.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_65480_10.2.0.2_2049_72.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_65480_10.2.0.2_2049_72.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_65486_10.2.0.2_2049_40.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_65486_10.2.0.2_2049_40.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_65511_10.2.0.2_2049_51.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_65511_10.2.0.2_2049_51.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_65533_10.2.0.2_2049_84.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_65533_10.2.0.2_2049_84.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.93_9692_10.2.0.2_2049_70.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24941/tcp_syn/10.1.1.93_9692_10.2.0.2_2049_70.pcap",
+                        "filter_id": "42685",
+                        "filter_name": "MS-RPC: Windows Network File System Memory Corruption Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            }
+        ],
+        "CVE-2023-21931": [
+            {
+                "10.1.0.103_33488_10.2.0.1_7001_4.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-21931/tcp_syn/10.1.0.103_33488_10.2.0.1_7001_4.pcap",
+                        "filter_id": "42720",
+                        "filter_name": "HTTP: Oracle WebLogic Server JNDI Insecure Deserialization Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            }
+        ],
+        "CVE-2023-28771": [
+            {
+                "10.1.1.193_15705_10.2.0.4_500_4.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-28771/udp/10.1.1.193_15705_10.2.0.4_500_4.pcap",
+                        "filter_id": "42776",
+                        "filter_name": "ISAKMP: ZyXEL Multiple Products Command Injection Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    },
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-28771/udp/10.1.1.193_15705_10.2.0.4_500_4.pcap",
+                        "filter_id": "43092",
+                        "filter_name": "TCP: Trojan.Linux.Mirai.CEG Runtime Detection",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            }
+        ],
+        "CVE-2023-2825": [
+            {
+                "10.1.1.121_36074_10.2.0.3_80_3.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-2825/tcp_syn/10.1.1.121_36074_10.2.0.3_80_3.pcap",
+                        "filter_id": "42844",
+                        "filter_name": "HTTP: GitLab Arbitrary File Read Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.0.22_0_10.2.0.4_0_3.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-28250/others/10.1.0.22_0_10.2.0.4_0_3.pcap",
+                        "filter_id": "42844",
+                        "filter_name": "HTTP: GitLab Arbitrary File Read Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            }
+        ],
+        "CVE-2023-28342": [
+            {
+                "10.1.1.216_43989_10.2.0.3_8888_3.pcap": [
+                    {
+                        "status": "pass",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-28342/tcp_syn/10.1.1.216_43989_10.2.0.3_8888_3.pcap",
+                        "filter_id": "42845",
+                        "filter_name": "HTTP: Zoho ManageEngine ADSelfService Plus Denial-of-Service Vulnerability (ZDI-23-437)",
+                        "first_run": "20240216033258",
+                        "last_run": "20240216033258"
+                    }
+                ]
+            }
+        ],
+        "CVE-2023-35036": [
+            {
+                "10.1.1.103_12364_10.2.0.4_80_25.pcap": [
+                    {
+                        "status": "pass",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-35036/tcp_syn/10.1.1.103_12364_10.2.0.4_80_25.pcap",
+                        "filter_id": "42866",
+                        "filter_name": "HTTP: MOVEit Transfer SILCertToUser SQL Injection Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240216033258"
+                    },
+                    {
+                        "status": "pass",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-35036/tcp_syn/10.1.1.103_12364_10.2.0.4_80_25.pcap",
+                        "filter_id": "42867",
+                        "filter_name": "HTTP: MOVEit Transfer certtousergw.aspx Endpoint Access",
+                        "first_run": "20240216033258",
+                        "last_run": "20240216033258"
+                    }
+                ]
+            },
+            {
+                "10.1.1.205_13887_10.2.0.5_80_27.pcap": [
+                    {
+                        "status": "pass",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-35036/tcp_syn/10.1.1.205_13887_10.2.0.5_80_27.pcap",
+                        "filter_id": "42866",
+                        "filter_name": "HTTP: MOVEit Transfer SILCertToUser SQL Injection Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240216033258"
+                    },
+                    {
+                        "status": "pass",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-35036/tcp_syn/10.1.1.205_13887_10.2.0.5_80_27.pcap",
+                        "filter_id": "42867",
+                        "filter_name": "HTTP: MOVEit Transfer certtousergw.aspx Endpoint Access",
+                        "first_run": "20240216033258",
+                        "last_run": "20240216033258"
+                    }
+                ]
+            }
+        ],
+        "CVE-2023-33246": [
+            {
+                "10.1.1.30_9513_10.2.0.1_10911_4.pcap": [
+                    {
+                        "status": "pass",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-33246/tcp_syn/10.1.1.30_9513_10.2.0.1_10911_4.pcap",
+                        "filter_id": "42938",
+                        "filter_name": "TCP: Apache RocketMQ buildStartCommand Command Injection Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240216033258"
+                    }
+                ]
+            }
+        ],
+        "CVE-2023-29298": [
+            {
+                "10.1.0.127_56980_10.2.0.2_8500_3.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-29298/tcp_syn/10.1.0.127_56980_10.2.0.2_8500_3.pcap",
+                        "filter_id": "42955",
+                        "filter_name": "HTTP: Adobe ColdFusion Improper Access Control Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.0.172_3375_10.2.0.3_8500_3.pcap": [
+                    {
+                        "status": "pass",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-29298/tcp_syn/10.1.0.172_3375_10.2.0.3_8500_3.pcap",
+                        "filter_id": "42955",
+                        "filter_name": "HTTP: Adobe ColdFusion Improper Access Control Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240216033258"
+                    }
+                ]
+            },
+            {
+                "10.1.0.218_33877_10.2.0.5_8500_3.pcap": [
+                    {
+                        "status": "pass",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-29298/tcp_syn/10.1.0.218_33877_10.2.0.5_8500_3.pcap",
+                        "filter_id": "42955",
+                        "filter_name": "HTTP: Adobe ColdFusion Improper Access Control Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240216033258"
+                    }
+                ]
+            },
+            {
+                "10.1.0.48_31540_10.2.0.5_8500_3.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-29298/tcp_syn/10.1.0.48_31540_10.2.0.5_8500_3.pcap",
+                        "filter_id": "42955",
+                        "filter_name": "HTTP: Adobe ColdFusion Improper Access Control Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.0.8_8101_10.2.0.2_8500_3.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-29298/tcp_syn/10.1.0.8_8101_10.2.0.2_8500_3.pcap",
+                        "filter_id": "42955",
+                        "filter_name": "HTTP: Adobe ColdFusion Improper Access Control Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.0.96_45737_10.2.0.5_8500_3.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-29298/tcp_syn/10.1.0.96_45737_10.2.0.5_8500_3.pcap",
+                        "filter_id": "42955",
+                        "filter_name": "HTTP: Adobe ColdFusion Improper Access Control Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.238_51357_10.2.0.2_8500_3.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-29298/tcp_syn/10.1.1.238_51357_10.2.0.2_8500_3.pcap",
+                        "filter_id": "42955",
+                        "filter_name": "HTTP: Adobe ColdFusion Improper Access Control Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.254_57394_10.2.0.2_8500_3.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-29298/tcp_syn/10.1.1.254_57394_10.2.0.2_8500_3.pcap",
+                        "filter_id": "42955",
+                        "filter_name": "HTTP: Adobe ColdFusion Improper Access Control Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.4_50493_10.2.0.3_8500_3.pcap": [
+                    {
+                        "status": "pass",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-29298/tcp_syn/10.1.1.4_50493_10.2.0.3_8500_3.pcap",
+                        "filter_id": "42955",
+                        "filter_name": "HTTP: Adobe ColdFusion Improper Access Control Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240216033258"
+                    }
+                ]
+            }
+        ],
+        "CVE-2023-3519": [
+            {
+                "10.1.0.192_55235_10.2.0.5_443_3.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-3519/tcp_syn/10.1.0.192_55235_10.2.0.5_443_3.pcap",
+                        "filter_id": "43050",
+                        "filter_name": "HTTP: Citrix Multiple Products Code Execution Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    },
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-3519/tcp_syn/10.1.0.192_55235_10.2.0.5_443_3.pcap",
+                        "filter_id": "43315",
+                        "filter_name": "TCP: SecretSauce Webshell Payload Detection",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.0.238_25852_10.2.0.1_443_3.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-3519/tcp_syn/10.1.0.238_25852_10.2.0.1_443_3.pcap",
+                        "filter_id": "43050",
+                        "filter_name": "HTTP: Citrix Multiple Products Code Execution Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    },
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-3519/tcp_syn/10.1.0.238_25852_10.2.0.1_443_3.pcap",
+                        "filter_id": "43315",
+                        "filter_name": "TCP: SecretSauce Webshell Payload Detection",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.0.78_32373_10.2.0.2_443_3.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-3519/tcp_syn/10.1.0.78_32373_10.2.0.2_443_3.pcap",
+                        "filter_id": "43050",
+                        "filter_name": "HTTP: Citrix Multiple Products Code Execution Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    },
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-3519/tcp_syn/10.1.0.78_32373_10.2.0.2_443_3.pcap",
+                        "filter_id": "43315",
+                        "filter_name": "TCP: SecretSauce Webshell Payload Detection",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.177_51726_10.2.0.1_443_3.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-3519/tcp_syn/10.1.1.177_51726_10.2.0.1_443_3.pcap",
+                        "filter_id": "43050",
+                        "filter_name": "HTTP: Citrix Multiple Products Code Execution Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    },
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-3519/tcp_syn/10.1.1.177_51726_10.2.0.1_443_3.pcap",
+                        "filter_id": "43315",
+                        "filter_name": "TCP: SecretSauce Webshell Payload Detection",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.193_37715_10.2.0.2_443_3.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-3519/tcp_syn/10.1.1.193_37715_10.2.0.2_443_3.pcap",
+                        "filter_id": "43050",
+                        "filter_name": "HTTP: Citrix Multiple Products Code Execution Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    },
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-3519/tcp_syn/10.1.1.193_37715_10.2.0.2_443_3.pcap",
+                        "filter_id": "43315",
+                        "filter_name": "TCP: SecretSauce Webshell Payload Detection",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.45_7247_10.2.0.4_443_3.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-3519/tcp_syn/10.1.1.45_7247_10.2.0.4_443_3.pcap",
+                        "filter_id": "43050",
+                        "filter_name": "HTTP: Citrix Multiple Products Code Execution Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    },
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-3519/tcp_syn/10.1.1.45_7247_10.2.0.4_443_3.pcap",
+                        "filter_id": "43315",
+                        "filter_name": "TCP: SecretSauce Webshell Payload Detection",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            }
+        ],
+        "CVE-2023-24489": [
+            {
+                "10.1.0.70_17998_10.2.0.1_80_3.pcap": [
+                    {
+                        "status": "pass",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-24489/tcp_syn/10.1.0.70_17998_10.2.0.1_80_3.pcap",
+                        "filter_id": "43097",
+                        "filter_name": "HTTP: Citrix ShareFile Storage Zones Controller ProcessRawPostedFile Directory Traversal",
+                        "first_run": "20240216033258",
+                        "last_run": "20240216033258"
+                    }
+                ]
+            }
+        ],
+        "CVE-2023-35078": [
+            {
+                "10.1.1.175_48254_10.2.0.3_80_3.pcap": [
+                    {
+                        "status": "pass",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-35078/tcp_syn/10.1.1.175_48254_10.2.0.3_80_3.pcap",
+                        "filter_id": "43102",
+                        "filter_name": "HTTP: Ivanti Endpoint Manager Mobile Exposed API Authentication Bypass Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240216033258"
+                    }
+                ]
+            }
+        ],
+        "CVE-2023-38831": [
+            {
+                "10.1.0.102_44437_10.2.0.4_80_3.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-38831/tcp_syn/10.1.0.102_44437_10.2.0.4_80_3.pcap",
+                        "filter_id": "43201",
+                        "filter_name": "HTTP: RARLAB WinRAR File Extension Spoofing Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    },
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-38831/tcp_syn/10.1.0.102_44437_10.2.0.4_80_3.pcap",
+                        "filter_id": "43266",
+                        "filter_name": "TCP: Backdoor.Win32.Darkme.A Runtime Detection",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    },
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-38831/tcp_syn/10.1.0.102_44437_10.2.0.4_80_3.pcap",
+                        "filter_id": "43386",
+                        "filter_name": "HTTP: Backdoor.Shell.Chrorevsh.A Runtime Detection",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.0.39_61926_10.2.0.4_80_3.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-38831/tcp_syn/10.1.0.39_61926_10.2.0.4_80_3.pcap",
+                        "filter_id": "43201",
+                        "filter_name": "HTTP: RARLAB WinRAR File Extension Spoofing Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    },
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-38831/tcp_syn/10.1.0.39_61926_10.2.0.4_80_3.pcap",
+                        "filter_id": "43266",
+                        "filter_name": "TCP: Backdoor.Win32.Darkme.A Runtime Detection",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    },
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-38831/tcp_syn/10.1.0.39_61926_10.2.0.4_80_3.pcap",
+                        "filter_id": "43386",
+                        "filter_name": "HTTP: Backdoor.Shell.Chrorevsh.A Runtime Detection",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            }
+        ],
+        "CVE-2023-38205": [
+            {
+                "10.1.0.135_2548_10.2.0.5_8500_3.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-38205/tcp_syn/10.1.0.135_2548_10.2.0.5_8500_3.pcap",
+                        "filter_id": "43265",
+                        "filter_name": "HTTP: Adobe ColdFusion IPFilterUtils Improper Access Control Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.0.1_23302_10.2.0.4_8500_3.pcap": [
+                    {
+                        "status": "pass",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-38205/tcp_syn/10.1.0.1_23302_10.2.0.4_8500_3.pcap",
+                        "filter_id": "43265",
+                        "filter_name": "HTTP: Adobe ColdFusion IPFilterUtils Improper Access Control Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240216033258"
+                    }
+                ]
+            },
+            {
+                "10.1.1.176_6539_10.2.0.1_8500_3.pcap": [
+                    {
+                        "status": "pass",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-38205/tcp_syn/10.1.1.176_6539_10.2.0.1_8500_3.pcap",
+                        "filter_id": "43265",
+                        "filter_name": "HTTP: Adobe ColdFusion IPFilterUtils Improper Access Control Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240216033258"
+                    }
+                ]
+            },
+            {
+                "10.1.1.187_57938_10.2.0.2_8500_3.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-38205/tcp_syn/10.1.1.187_57938_10.2.0.2_8500_3.pcap",
+                        "filter_id": "43265",
+                        "filter_name": "HTTP: Adobe ColdFusion IPFilterUtils Improper Access Control Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.214_18727_10.2.0.2_8500_3.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-38205/tcp_syn/10.1.1.214_18727_10.2.0.2_8500_3.pcap",
+                        "filter_id": "43265",
+                        "filter_name": "HTTP: Adobe ColdFusion IPFilterUtils Improper Access Control Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.246_16822_10.2.0.5_8500_3.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-38205/tcp_syn/10.1.1.246_16822_10.2.0.5_8500_3.pcap",
+                        "filter_id": "43265",
+                        "filter_name": "HTTP: Adobe ColdFusion IPFilterUtils Improper Access Control Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.24_32475_10.2.0.3_8500_3.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-38205/tcp_syn/10.1.1.24_32475_10.2.0.3_8500_3.pcap",
+                        "filter_id": "43265",
+                        "filter_name": "HTTP: Adobe ColdFusion IPFilterUtils Improper Access Control Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.66_64182_10.2.0.3_8500_3.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-38205/tcp_syn/10.1.1.66_64182_10.2.0.3_8500_3.pcap",
+                        "filter_id": "43265",
+                        "filter_name": "HTTP: Adobe ColdFusion IPFilterUtils Improper Access Control Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.70_19620_10.2.0.4_8500_3.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-38205/tcp_syn/10.1.1.70_19620_10.2.0.4_8500_3.pcap",
+                        "filter_id": "43265",
+                        "filter_name": "HTTP: Adobe ColdFusion IPFilterUtils Improper Access Control Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.78_10915_10.2.0.5_8500_3.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-38205/tcp_syn/10.1.1.78_10915_10.2.0.5_8500_3.pcap",
+                        "filter_id": "43265",
+                        "filter_name": "HTTP: Adobe ColdFusion IPFilterUtils Improper Access Control Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            }
+        ],
+        "CVE-2023-22515": [
+            {
+                "10.1.1.10_49823_10.2.0.3_8090_3.pcap": [
+                    {
+                        "status": "pass",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-22515/tcp_syn/10.1.1.10_49823_10.2.0.3_8090_3.pcap",
+                        "filter_id": "43344",
+                        "filter_name": "HTTP: Atlassian Confluence Server and Data Center Broken Access Control Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240216033258"
+                    }
+                ]
+            }
+        ],
+        "CVE-2023-46604": [
+            {
+                "10.1.0.132_64615_10.2.0.2_61616_4.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-46604/tcp_syn/10.1.0.132_64615_10.2.0.2_61616_4.pcap",
+                        "filter_id": "43436",
+                        "filter_name": "HTTP: Ransomware.MSIL.Mencdll.A Runtime Detection",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    },
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-46604/tcp_syn/10.1.0.132_64615_10.2.0.2_61616_4.pcap",
+                        "filter_id": "43439",
+                        "filter_name": "HTTP: Apache ActiveMQ OpenWire Protocol Remote Code Execution Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.0.158_10903_10.2.0.2_61616_4.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-46604/tcp_syn/10.1.0.158_10903_10.2.0.2_61616_4.pcap",
+                        "filter_id": "43436",
+                        "filter_name": "HTTP: Ransomware.MSIL.Mencdll.A Runtime Detection",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    },
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-46604/tcp_syn/10.1.0.158_10903_10.2.0.2_61616_4.pcap",
+                        "filter_id": "43439",
+                        "filter_name": "HTTP: Apache ActiveMQ OpenWire Protocol Remote Code Execution Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.0.158_59208_10.2.0.3_61616_4.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-46604/tcp_syn/10.1.0.158_59208_10.2.0.3_61616_4.pcap",
+                        "filter_id": "43436",
+                        "filter_name": "HTTP: Ransomware.MSIL.Mencdll.A Runtime Detection",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    },
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-46604/tcp_syn/10.1.0.158_59208_10.2.0.3_61616_4.pcap",
+                        "filter_id": "43439",
+                        "filter_name": "HTTP: Apache ActiveMQ OpenWire Protocol Remote Code Execution Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    }
+                ]
+            },
+            {
+                "10.1.1.166_47627_10.2.0.1_61616_4.pcap": [
+                    {
+                        "status": "fail",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-46604/tcp_syn/10.1.1.166_47627_10.2.0.1_61616_4.pcap",
+                        "filter_id": "43436",
+                        "filter_name": "HTTP: Ransomware.MSIL.Mencdll.A Runtime Detection",
+                        "first_run": "20240216033258",
+                        "last_run": "20240223100543"
+                    },
+                    {
+                        "status": "pass",
+                        "s3_uri": "s3://dvlabs-breakingpoint-pcaps-test/pcaps/CVE-2023-46604/tcp_syn/10.1.1.166_47627_10.2.0.1_61616_4.pcap",
+                        "filter_id": "43439",
+                        "filter_name": "HTTP: Apache ActiveMQ OpenWire Protocol Remote Code Execution Vulnerability",
+                        "first_run": "20240216033258",
+                        "last_run": "20240216033258"
+                    }
+                ]
+            }
+        ]
+    },
+    "ds": {}
+}
